@@ -1,0 +1,30 @@
+|Test_FSM
+KEY[0] => FSM:fsm3.CLK
+KEY[1] => ~NO_FANOUT~
+SW[0] => FSM:fsm3.w
+SW[1] => FSM:fsm3.reset
+LEDR[0] << FSM:fsm3.present_state[0]
+LEDR[1] << FSM:fsm3.present_state[1]
+LEDR[2] << FSM:fsm3.present_state[2]
+LEDR[3] << FSM:fsm3.present_state[3]
+LEDR[4] << FSM:fsm3.Q
+
+
+|Test_FSM|FSM:fsm3
+w => Y_D.F.DATAA
+w => Y_D.G.DATAB
+w => Y_D.H.DATAB
+w => Y_D.I.DATAB
+w => Selector0.IN1
+w => Y_D.C.DATAB
+w => Y_D.D.DATAB
+w => Selector1.IN1
+CLK => y_Q~1.DATAIN
+reset => y_Q~3.DATAIN
+Q <= WideNor0.DB_MAX_OUTPUT_PORT_TYPE
+present_state[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+present_state[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+present_state[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+present_state[3] <= present_state[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
