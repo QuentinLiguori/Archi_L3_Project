@@ -1,0 +1,11 @@
+Library IEEE;
+USE ieee.std_logic_1164.all;
+
+Entity Part1 IS
+PORT(SW : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+LEDR: OUT STD_LOGIC_VECTOR(7 DOWNTO 0)); --red led
+END Part1;
+ARCHITECTURE Behavior OF Part1 IS
+BEGIN
+LEDR<=SW;
+END Behavior;

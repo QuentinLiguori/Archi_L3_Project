@@ -1,0 +1,23 @@
+Library IEEE ;
+USE ieee.std_logic_1164.all;
+Entity Test_AddSubNbits IS
+GENERIC(N: integer :=4);--VALEUR PAR DEFAUT 4
+PORT(
+	SW: IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+	LEDR: OUT STD_LOGIC_VECTOR(8 DOWNTO 0));
+END Test_AddSubNbits;
+
+ARCHITECTURE Behavior OF Test_AddSubNbits IS
+COMPONENT AddSubNbits is
+PORT (
+	A, B: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0); 
+	Cin, Sel: IN STD_LOGIC;
+	S: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0); 
+	Cout: OUT STD_LOGIC);
+END COMPONENT;
+
+BEGIN
+	
+as : AddSubNbits PORT MAP(A=>SW(3 DOWNTO 0), B=>SW(7 DOWNTO 4), Cin=>SW(8),Sel =>SW(9), Cout=>LEDR(0), S=>LEDR(8 DOWNTO 5));
+
+END Behavior ;

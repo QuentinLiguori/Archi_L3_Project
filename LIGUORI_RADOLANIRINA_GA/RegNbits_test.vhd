@@ -1,0 +1,22 @@
+Library IEEE ;
+USE ieee.std_logic_1164.all;
+Entity RegNbits_test IS
+GENERIC(N: integer :=4);--VALEUR PAR DEFAUT 4
+PORT(
+	SW: IN STD_LOGIC_VECTOR(5 DOWNTO 0);
+	LEDR: OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+END RegNbits_test;
+
+ARCHITECTURE Behavior OF RegNbits_test IS
+COMPONENT RegNbits is
+PORT(
+	D: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0); 
+	Clk, Rst: IN STD_LOGIC;
+	Q: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0));
+END COMPONENT;
+
+BEGIN
+
+reg : RegNbits PORT MAP(D=>SW(3 DOWNTO 0), Clk=>SW(4), Rst=>SW(5), Q=>LEDR(3 DOWNTO 0));
+
+END Behavior ;
