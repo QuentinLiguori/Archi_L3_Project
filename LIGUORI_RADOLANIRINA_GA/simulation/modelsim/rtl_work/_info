@@ -1,0 +1,127 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/etudiant/Documents/LIGUORI_RADOLANIRINA_GA/simulation/modelsim
+Eflipflop_d
+Z1 w1582625075
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/etudiant/Documents/LIGUORI_RADOLANIRINA_GA/FlipFlop_D.vhd
+Z5 F/home/etudiant/Documents/LIGUORI_RADOLANIRINA_GA/FlipFlop_D.vhd
+l0
+L3
+VRVmhO]_<5Lga?Bc:?m0bV2
+!s100 SGlU8<F3[_j@0Jb_7gaA[3
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1582628740
+!i10b 1
+Z8 !s108 1582628740.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/etudiant/Documents/LIGUORI_RADOLANIRINA_GA/FlipFlop_D.vhd|
+Z10 !s107 /home/etudiant/Documents/LIGUORI_RADOLANIRINA_GA/FlipFlop_D.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+DEx4 work 10 flipflop_d 0 22 RVmhO]_<5Lga?Bc:?m0bV2
+l11
+L10
+V8R:n<>H:ORP:^cb:IO;1V3
+!s100 ?9OX07EDlz^>=JZj1:RXj1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Efsm_detect
+Z13 w1582628045
+R2
+R3
+R0
+Z14 8/home/etudiant/Documents/LIGUORI_RADOLANIRINA_GA/FSM_detect.vhd
+Z15 F/home/etudiant/Documents/LIGUORI_RADOLANIRINA_GA/FSM_detect.vhd
+l0
+L3
+V3MX`LUzdBDmA6XWz2[Li;3
+!s100 NjA=Dd[=0eeYX6BFYk8c51
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|/home/etudiant/Documents/LIGUORI_RADOLANIRINA_GA/FSM_detect.vhd|
+Z17 !s107 /home/etudiant/Documents/LIGUORI_RADOLANIRINA_GA/FSM_detect.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R2
+R3
+DEx4 work 10 fsm_detect 0 22 3MX`LUzdBDmA6XWz2[Li;3
+l19
+L8
+V>5ih:Cmo^MjP2lmeRz2_:1
+!s100 mXE<PB:S5UbaOM;710Y]I1
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Etest_fsm_detect
+Z18 w1582628696
+R2
+R3
+R0
+Z19 8/home/etudiant/Documents/LIGUORI_RADOLANIRINA_GA/test_FSM_detect.vhd
+Z20 F/home/etudiant/Documents/LIGUORI_RADOLANIRINA_GA/test_FSM_detect.vhd
+l0
+L4
+V<0MW4dbM7Sl6Q4khWL`bM0
+!s100 [a9=T4Ra6Qha2_cSh`eiM0
+R6
+32
+Z21 !s110 1582628751
+!i10b 1
+Z22 !s108 1582628751.000000
+Z23 !s90 -reportprogress|300|-work|work|/home/etudiant/Documents/LIGUORI_RADOLANIRINA_GA/test_FSM_detect.vhd|
+Z24 !s107 /home/etudiant/Documents/LIGUORI_RADOLANIRINA_GA/test_FSM_detect.vhd|
+!i113 1
+Z25 o-work work
+R12
+Aarchictecture
+R2
+R3
+DEx4 work 15 test_fsm_detect 0 22 <0MW4dbM7Sl6Q4khWL`bM0
+l19
+L7
+VR]7DQOPSS7ifS827E7;0k0
+!s100 2l:Ba6gTSLV:1H4aQVhN_1
+R6
+32
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R25
+R12
